@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: Lexend Deca;
+}
+
+wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    min-width: 100%;
+}
+
+wrapper h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: Big Shoulders Display;
+}
+
+.yellow--container, .cyan--container, .green--container {
+    width: 17rem;
+    padding: 2.2rem;
+}
+
+.yellow--container {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.cyan--container {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.green--container {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+h1, img {
+    margin-bottom: 1.5rem;
+}
+
+
+.desc {
+    width: 90%;
+    padding-bottom: 6rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    border: solid;
+    padding: 0.8rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: screen;
+    border-radius: 6rem;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 0.8rem;
+}
+
+@media only screen and (max-width: 375px) {
+    wrapper {
+        display: flex;
+        flex-direction: column;
+    }    
+
+    .yellow--container {
+        border-radius: 5px 5px 0px 0px
+    }
+
+    .green--container {
+        /* border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    border-radius: 0px 0px 5px 5px
+    }
+
+    .yellow--container, .cyan--container, .green--container {
+        min-height: 25em;
+        padding: 2rem 2rem 0rem 2rem;
+    }
+
+    .desc {
+        padding-bottom: 1rem;
+    }
+}
